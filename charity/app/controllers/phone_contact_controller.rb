@@ -1,0 +1,2 @@
+class PhoneContactController < ApplicationController
+end

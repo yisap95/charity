@@ -1,0 +1,2 @@
+module MoneyContactHelper
+end
