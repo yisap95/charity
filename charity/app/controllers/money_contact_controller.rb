@@ -1,2 +1,3 @@
 class MoneyContactController < ApplicationController
+
 end
