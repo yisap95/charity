@@ -26,6 +26,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 #plaid
 gem 'plaid'
 
+#figaro for environment variables
+gem 'figaro'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -34,7 +37,6 @@ gem 'plaid'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'plaid'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

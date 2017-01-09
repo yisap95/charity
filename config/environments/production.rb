@@ -76,4 +76,12 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  Plaid.config do |p|
+    p.client_id = '[Plaid client ID]'
+    p.secret = '[Plaid secret]'
+    p.env = :production
+  end
+
+
 end
