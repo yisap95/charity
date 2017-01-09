@@ -56,4 +56,10 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  resource :account do
+    post 'update_donation_amount'
+    get  'amount_donated'
+    get  'get_token'
+    post 'clear_token'
+  end
 end
