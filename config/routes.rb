@@ -62,4 +62,9 @@ Rails.application.routes.draw do
     get  'get_token'
     post 'clear_token'
   end
+
+  resource :money_contact do
+    post 'webhook_in'
+    post 'setup_acc'
+  end
 end
