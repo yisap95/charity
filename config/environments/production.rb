@@ -78,8 +78,8 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   Plaid.config do |p|
-    p.client_id = '[Plaid client ID]'
-    p.secret = '[Plaid secret]'
+    p.client_id = ENV["PLAID_CLIENT_ID"]
+    p.secret = ENV["PLAID_SECRET"]
     p.env = :production
   end
 

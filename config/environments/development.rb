@@ -40,10 +40,12 @@ Rails.application.configure do
   # config.action_view.raise_on_missing_translations = true
 
   Plaid.config do |p|
-    p.client_id = '[Plaid client ID]'
-    p.secret = '[Plaid secret]'
+    p.client_id = ENV["PLAID_CLIENT_ID"]
+    p.secret = ENV["PLAID_SECRET"]
     p.env = :tartan
   end
+
+  Stripe.api_key = "sk_test_8FxpUsxawoBSJ7eqtFnk5zpo"
 
 
 
