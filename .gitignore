@@ -16,7 +16,10 @@
 !/log/.keep
 /tmp
 
+/.DS_Store
+
 
 # Ignore application configuration
 /config/application.yml
-.idea
+.idea/*
+>>>>>>> 6a209a0... Update .gitignore
