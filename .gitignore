@@ -22,4 +22,4 @@
 # Ignore application configuration
 /config/application.yml
 .idea/*
->>>>>>> 6a209a0... Update .gitignore
+charity/*
