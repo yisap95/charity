@@ -83,5 +83,4 @@ Rails.application.configure do
     p.env = :production
   end
 
-
 end

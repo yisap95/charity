@@ -22,5 +22,11 @@ module Charity
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+
+
+    Stripe.api_key = ENV["striple_api_key"]
+
+
   end
 end

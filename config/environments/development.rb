@@ -45,7 +45,6 @@ Rails.application.configure do
     p.env = :tartan
   end
 
-  Stripe.api_key = "sk_test_8FxpUsxawoBSJ7eqtFnk5zpo"
 
 
 
