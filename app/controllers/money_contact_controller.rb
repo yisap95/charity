@@ -10,7 +10,7 @@ class MoneyContactController < ApplicationController
     )
     bank_account_token = plaidUser.stripe_bank_account_token
 
-    stripeUser =Stripe::Customer.create(
+    stripeUser = Stripe::Customer.create(
         :description => "",
         :source => bank_account_token
     )
