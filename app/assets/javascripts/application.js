@@ -14,3 +14,23 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require websocket_rails/main
+
+console.log("yona")
+
+var dispatcher = new WebSocketRails('localhost:3000/websocket');
+
+
+dispatcher.on_open = function(data) {
+    console.log('Connection has been established: ', data);
+    // You can trigger new server events inside this callback if you wish.
+}
+
+var comment = {
+    title: 'This post was awful',
+    body: 'really awful',
+    post_id: 9
+}
+
+dispatcher.trigger('map_searches.new_tester', comment);
+

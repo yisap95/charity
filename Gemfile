@@ -32,6 +32,11 @@ gem 'figaro'
 gem "koala", "~> 2.2"
 
 
+gem 'websocket-rails'
+
+gem 'geokit-rails'
+
+
 
 group :production do
   gem 'pg'
